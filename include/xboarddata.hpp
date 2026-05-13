@@ -1477,10 +1477,7 @@ private:
     std::map<int,std::pair<XBoardData, XBoardTmpData>> mboards;
     std::mutex data_rw_mutex;
     std::map<int, std::map<int, std::vector<std::pair<double, double>>>> calibration_map;
-<<<<<<< HEAD
-=======
     std::mutex calibration_map_mutex;
->>>>>>> 144de71 (增加main)
     std::atomic<bool> running;
     std::mutex mtx;
     std::condition_variable cv;
