@@ -379,7 +379,7 @@ static void cb(struct mg_connection *c, int ev, void *ev_data)
                 } catch (const std::exception & e) {
                     mg_http_reply(c, 500, "Content-Type:application/json\r\n", "{\"statusCode\":\"500\"},{\"message\":\"Unknow Error\"}");
                 }
-            } else if (mg_match(hm->uri, mg_str("/Uni/LoadCalibrationConfig"), NULL)) {
+            } else if (mg_match(hm->uri, mg_str("/Uni/load_cal"), NULL)) {
                 try {
                     struct mg_str* content_type_header = mg_http_get_header(hm, "Content-Type");
                     if (content_type_header == nullptr) {
