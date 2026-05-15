@@ -42,7 +42,7 @@ LIBPATH += /usr/local/boost_x86
 LIBPATH += ../lib
 RM := rm -f
 
-#以下部分无需�?�?
+#以下部分无需修改?
 CSRCS := $(wildcard *.c) $(wildcard libjson/*.c) $(wildcard libxml/*.c) $(wildcard ../ota/*.c) $(wildcard ../ota/libjson/*.c)
 CPPSRCS := $(wildcard *.cpp) $(wildcard libjson/*.cpp) $(wildcard libxml/*.cpp) $(wildcard ../ota/*.cpp) $(wildcard ../ota/libjson/*.cpp)
 CCSRCS := $(wildcard *.cc) $(wildcard libjson/*.cc) $(wildcard libxml/*.cc) $(wildcard ../ota/*.cc) $(wildcard ../ota/libjson/*.cc)
