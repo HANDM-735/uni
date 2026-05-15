@@ -580,7 +580,7 @@ int main(int argc, char *argv[])
         MG_ERROR(("Cannot listen on %s. Use http://ADDR:PORT or :PORT", s_addr1));
         exit(EXIT_FAILURE);
     }
-    if ((c = mg_http_listen(&mgr, s_addr2, (void (*)1)) == NULL))
+    if ((c = mg_http_listen(&mgr, s_addr2, cb, (void *)1)) == NULL)
     {
         MG_ERROR(("Cannot listen on %s. Use http://ADDR:PORT or :PORT", s_addr2));
         exit(EXIT_FAILURE);
